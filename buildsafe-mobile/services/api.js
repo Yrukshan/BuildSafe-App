@@ -1,0 +1,1 @@
+export const API_BASE_URL = 'http://192.168.8.120:5000'; // ← your IP  Look for IPv4 Address under Wi-Fi(ipconfig in cmd)

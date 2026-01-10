@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Bridge Span Limit",
+    "conditions": {
+      "all": [
+        {
+          "fact": "spanLength",
+          "operator": "greaterThan",
+          "value": 500
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "AASHTO-LRFD-3",
+        "message": "Span exceeds safe limit",
+        "severity": "critical",
+        "penalty": -30,
+        "category": "structural",
+        "source": "standard"
+      }
+    }
+  }
+]

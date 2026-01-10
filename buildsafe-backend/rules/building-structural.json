@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Building Height Limit",
+    "conditions": {
+      "all": [
+        {
+          "fact": "buildingHeight",
+          "operator": "greaterThan",
+          "value": 50
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "IBC-503",
+        "message": "Building exceeds height limit (50m)",
+        "severity": "medium",
+        "penalty": -15,
+        "category": "structural",
+        "source": "standard"
+      }
+    }
+  }
+]

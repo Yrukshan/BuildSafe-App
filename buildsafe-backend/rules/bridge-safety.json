@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Traffic Lane Requirement",
+    "conditions": {
+      "all": [
+        {
+          "fact": "trafficLanes",
+          "operator": "lessThan",
+          "value": 2
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "AASHTO-GREEN-BOOK",
+        "message": "Too few traffic lanes for bridge width",
+        "severity": "medium",
+        "penalty": -15,
+        "category": "safety",
+        "source": "standard"
+      }
+    }
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Minimum Exits",
+    "conditions": {
+      "all": [
+        {
+          "fact": "exitCount",
+          "operator": "lessThan",
+          "value": 2
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "IBC-1006",
+        "message": "Insufficient number of exits",
+        "severity": "high",
+        "penalty": -20,
+        "category": "safety",
+        "source": "standard"
+      }
+    }
+  }
+]

@@ -1,0 +1,358 @@
+[
+  {
+    "name": "Building Height and Emergency Exits",
+    "conditions": [
+      {
+        "fact": "building_height",
+        "operator": ">=",
+        "value": 40
+      }
+    ],
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BUILDING-HEIGHT-01",
+        "message": "Building height exceeds recommended limit.",
+        "severity": "medium",
+        "penalty": -10,
+        "category": "safety",
+        "source": "custom"
+      }
+    }
+  },
+  {
+    "name": "Bridge Design",
+    "conditions": {
+      "all": [
+        {
+          "field": "span_length",
+          "operator": ">",
+          "value": 400
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BRIDGE_DESIGN",
+        "message": "Bridges with a span length greater than 400 meters must be designed to withstand wind speeds of at least 150 km/h.",
+        "severity": "high",
+        "penalty": -500
+      }
+    }
+  },
+  {
+    "name": "Building Height and Emergency Exits",
+    "conditions": {
+      "all": [
+        {
+          "field": "building_height",
+          "operator": ">=",
+          "value": 42
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BHEXITS",
+        "message": "Buildings taller than 42 meters must have at least 2 emergency exits.",
+        "severity": "medium",
+        "penalty": -10
+      }
+    }
+  },
+  {
+    "name": "Building Height and Emergency Exits",
+    "conditions": {
+      "all": [
+        {
+          "field": "building_height",
+          "operator": ">=",
+          "value": 35
+        },
+        {
+          "field": "emergency_exits",
+          "operator": ">=",
+          "value": 2
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BUILDING_HEIGHT_EMERGENCY_EXITS",
+        "message": "Buildings taller than 35 meters must have at least 2 emergency exits.",
+        "severity": "high",
+        "penalty": -500
+      }
+    }
+  },
+  {
+    "name": "Building Height and Emergency Exits",
+    "conditions": {
+      "all": [
+        {
+          "field": "building_height",
+          "operator": ">=",
+          "value": 35
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BUILDING_HEIGHT_EMERGENCY_EXITS",
+        "message": "Buildings taller than 35 meters must have at least 2 emergency exits.",
+        "severity": "medium",
+        "penalty": -10
+      }
+    }
+  },
+  {
+    "name": "Emergency Exits for Tall Buildings",
+    "conditions": {
+      "all": [
+        {
+          "field": "building_height",
+          "operator": ">=",
+          "value": 37
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "TALL_BUILDING_EMERGENCY_EXIT_VIOLATION",
+        "message": "Buildings taller than 37 meters must have at least 2 emergency exits",
+        "severity": "high",
+        "penalty": -50
+      }
+    }
+  },
+  {
+    "name": "Building Height and Emergency Exits",
+    "conditions": {
+      "all": [
+        {
+          "field": "building_height",
+          "operator": ">=",
+          "value": 39
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BUILDING_HEIGHT_EMERGENCY_EXITS",
+        "message": "Buildings taller than 39 meters must have at least 2 emergency exits",
+        "severity": "high",
+        "penalty": -50
+      }
+    }
+  },
+  {
+    "name": "Bridge Design",
+    "conditions": {
+      "all": [
+        {
+          "field": "span_length",
+          "op": ">",
+          "value": 401
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BRIDGE_DESIGN_VIOLATION",
+        "message": "Bridges with a span length greater than 401 meters must be designed to withstand wind speeds of at least 160 km/h.",
+        "severity": "high",
+        "penalty": -500
+      }
+    }
+  },
+  {
+    "name": "Bridge Design",
+    "conditions": {
+      "all": [
+        {
+          "field": "span_length",
+          "operator": ">",
+          "value": 401
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BRIDGE_DESIGN_VIOLATION",
+        "message": "Bridges with a span length greater than 401 meters must be designed to withstand wind speeds of at least 160 km/h.",
+        "severity": "high",
+        "penalty": -500
+      }
+    }
+  },
+  {
+    "name": "Bridge Design",
+    "conditions": {
+      "all": [
+        {
+          "field": "span_length",
+          "operator": ">",
+          "value": 401
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BRIDGE_DESIGN_VIOLATION",
+        "message": "Bridges with a span length greater than 401 meters must be designed to withstand wind speeds of at least 160 km/h.",
+        "severity": "high",
+        "penalty": -500
+      }
+    }
+  },
+  {
+    "name": "Building Height and Emergency Exits",
+    "conditions": {
+      "all": [
+        {
+          "field": "building_height",
+          "operator": ">=",
+          "value": 40
+        },
+        {
+          "field": "emergency_exits",
+          "operator": ">=",
+          "value": 2
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BUILDING_HEIGHT_EMERGENCY_EXITS",
+        "message": "Buildings taller than 40 meters must have at least 2 emergency exits",
+        "severity": "high",
+        "penalty": -100
+      }
+    }
+  },
+  {
+    "name": "Bridge Design",
+    "conditions": {
+      "all": [
+        {
+          "field": "span_length",
+          "operator": ">",
+          "value": 403
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BRIDGE_DESIGN_VIOLATION",
+        "message": "Bridges with a span length greater than 403 meters must be designed to withstand wind speeds of at least 152 km/h",
+        "severity": "high",
+        "penalty": -500
+      }
+    }
+  },
+  {
+    "name": "Bridge Design",
+    "conditions": {
+      "all": [
+        {
+          "field": "span_length",
+          "operator": ">",
+          "value": 404
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BRIDGE_DESIGN_VIOLATION",
+        "message": "Bridges with a span length greater than 404 meters must be designed to withstand wind speeds of at least 154 km/h.",
+        "severity": "high",
+        "penalty": -500
+      }
+    }
+  },
+  {
+    "name": "Bridge Design",
+    "conditions": {
+      "all": [
+        {
+          "field": "span_length",
+          "operator": ">",
+          "value": 399
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BRIDGE_DESIGN_VIOLATION",
+        "message": "Bridges with a span length greater than 399 meters must be designed to withstand wind speeds of at least 154km/h.",
+        "severity": "high",
+        "penalty": -500
+      }
+    }
+  },
+  {
+    "name": "Building Height and Emergency Exits",
+    "conditions": {
+      "all": [
+        {
+          "field": "building_height",
+          "operator": ">=",
+          "value": 31
+        },
+        {
+          "field": "emergency_exits",
+          "operator": ">=",
+          "value": 2
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "BUILDING_HEIGHT_EMERGENCY_EXITS",
+        "message": "Buildings taller than 31 meters must have at least 2 emergency exits",
+        "severity": "high",
+        "penalty": -500
+      }
+    }
+  },
+  {
+    "name": "Tall Building Emergency Exits",
+    "conditions": {
+      "all": [
+        {
+          "field": "building_height",
+          "operator": ">=",
+          "value": 34
+        },
+        {
+          "field": "emergency_exits_count",
+          "operator": "<=",
+          "value": 1
+        }
+      ]
+    },
+    "event": {
+      "type": "violation",
+      "params": {
+        "code": "TALLEST_BUILDING_NO_EMERGENCY_EXITS",
+        "message": "Building taller than 34 meters must have at least 2 emergency exits.",
+        "severity": "high",
+        "penalty": -50
+      }
+    }
+  }
+]
